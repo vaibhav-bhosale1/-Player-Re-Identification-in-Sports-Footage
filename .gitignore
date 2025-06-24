@@ -1,0 +1,35 @@
+best.pt
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+venv_reid_project/  # Your specific virtual environment folder
+# Python virtual environments
+venv/
+venv_reid_project/
+# IDEs
+.vscode/ # VS Code
+.idea/   # IntelliJ / PyCharm
+
+# Ultralytics/YOLO related
+runs/                # Directory where YOLOv11 saves training/detection runs (e.g., results of `model.track`)
+weights/             # Often contains downloaded or saved model weights (if not explicitly 'best.pt' in root)
+
+# Project-specific large files / outputs
+*.pt                 # Your model file 'best.pt' - you might want to keep this, but if it's very large
+                     # and you're providing it via GDrive, you could ignore it here.
+                     # However, for this project, you likely want to include 'best.pt' for simplicity.
+                     # If you explicitly want to ignore it, uncomment the line below:
+# best.pt
+
+*.mp4                # Video files - input and output
+# 15sec_input_720p.mp4 # If you provide the input video via GDrive link.
+output_tracked_players_with_id.mp4 # Your generated output video
+
+# Operating System files
+.DS_Store            # macOS
+Thumbs.db            # Windows
