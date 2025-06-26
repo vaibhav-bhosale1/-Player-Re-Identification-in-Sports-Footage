@@ -109,7 +109,7 @@ persist=True: This crucial parameter enables the tracker to maintain object iden
 
 tracker='bytetrack.yaml': Specifies ByteTrack as the underlying tracking algorithm. ByteTrack is known for its robustness in crowded scenes and handling occlusions.
 
-Class Filtering: The script specifically targets 'player' detections (based on PLAYER_CLASS_ID) for ID assignment and unique coloring, while the 'ball' is detected but not assigned a persistent track ID for simplicity, as per the assignment's focus on player re-identification.
+Class Filtering: The script specifically targets 'player' detections (based on PLAYER_CLASS_ID) for ID assignment and unique coloring, while the 'ball' is detected but not assigned a persistent track ID for simplicity, as per the assignment's primary focus.
 
 Visualization: OpenCV (cv2) is used to draw bounding boxes, track IDs, and confidence scores directly onto the video frames. A helper function get_color() ensures consistent, distinct colors for each player's ID.
 
