@@ -19,11 +19,7 @@ venv_reid_project/
 runs/                # Directory where YOLOv11 saves training/detection runs (e.g., results of `model.track`)
 weights/             # Often contains downloaded or saved model weights (if not explicitly 'best.pt' in root)
 
-# Project-specific large files / outputs
-*.pt                 # Your model file 'best.pt' - you might want to keep this, but if it's very large
-                     # and you're providing it via GDrive, you could ignore it here.
-                     # However, for this project, you likely want to include 'best.pt' for simplicity.
-                     # If you explicitly want to ignore it, uncomment the line below:
+
 # best.pt
 
 *.mp4                # Video files - input and output
